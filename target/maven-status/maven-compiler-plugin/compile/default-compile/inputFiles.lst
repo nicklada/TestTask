@@ -1,0 +1,10 @@
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/config/SpringfoxConfiguration.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/TestRestApiApplication.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/repository/UserRepository.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/config/CustomRepositoryRestConfigurerAdapter.java
+/Users/lada/Documents/Dins test/target/generated-sources/com/nordigy/testrestapi/model/QUser.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/model/error/ValidationError.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/api/ExceptionHandlerController.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/model/User.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/init/DataInitializer.java
+/Users/lada/Documents/Dins test/src/main/java/com/nordigy/testrestapi/model/error/ErrorResponse.java

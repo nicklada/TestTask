@@ -1,0 +1,12 @@
+com/nordigy/testrestapi/model/User.class
+com/nordigy/testrestapi/init/DataInitializer.class
+com/nordigy/testrestapi/TestRestApiApplication.class
+com/nordigy/testrestapi/model/error/ErrorResponse$Builder.class
+com/nordigy/testrestapi/model/QUser.class
+com/nordigy/testrestapi/model/error/ValidationError.class
+com/nordigy/testrestapi/config/CustomRepositoryRestConfigurerAdapter.class
+com/nordigy/testrestapi/api/ExceptionHandlerController.class
+com/nordigy/testrestapi/model/User$UserBuilder.class
+com/nordigy/testrestapi/repository/UserRepository.class
+com/nordigy/testrestapi/config/SpringfoxConfiguration.class
+com/nordigy/testrestapi/model/error/ErrorResponse.class

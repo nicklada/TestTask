@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.nordigy.testrestapi.RestApiTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.663 s <<< FAILURE! - in com.nordigy.testrestapi.RestApiTests
+shouldCreateNewUser  Time elapsed: 5.972 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <""Ivan" (TextNode@33fa6a8b)">
+to be equal to:
+ <""Ivan" (String@513f8279)">
+but was not.
+	at com.nordigy.testrestapi.RestApiTests.shouldCreateNewUser(RestApiTests.java:62)
+
