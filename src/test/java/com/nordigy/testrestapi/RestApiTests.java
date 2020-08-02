@@ -17,6 +17,8 @@ import javax.annotation.PostConstruct;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.hibernate.criterion.Restrictions.or;
+import static org.springframework.test.annotation.DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD;
 import static org.springframework.test.annotation.DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD;
 
 @RunWith(SpringRunner.class)
@@ -34,25 +36,26 @@ class RestApiTests {
     }
 
     @Nested
+    @DirtiesContext(classMode = AFTER_EACH_TEST_METHOD)
     public class GetMethodTests {
 
-        @Test
-        public void shouldReturnCorrectUsersListSize() {
-            given().log().all()
-                    .when().get("/api/users")
-                    .then().log().ifValidationFails()
-                    .statusCode(200)
-                    .body("page.totalElements", is(20));
-        }
-
-        @Test
-        public void shouldReturnCorrectPageSize() {
-            given().log().all()
-                    .when().get("/api/users")
-                    .then().log().ifValidationFails()
-                    .statusCode(200)
-                    .body("page.size", is(20));
-        }
+//        @Test
+//        public void shouldReturnCorrectUsersListSize() {
+//            given().log().all()
+//                    .when().get("/api/users")
+//                    .then().log().ifValidationFails()
+//                    .statusCode(200)
+//                    .body("page.totalElements", is(20));
+//        }
+//
+//        @Test
+//        public void shouldReturnCorrectPageSize() {
+//            given().log().all()
+//                    .when().get("/api/users")
+//                    .then().log().ifValidationFails()
+//                    .statusCode(200)
+//                    .body("page.size", is(20));
+//        }
 
         @Test
         public void shouldReturnCorrectNumberOfPages() {
@@ -108,7 +111,7 @@ class RestApiTests {
         public void shouldSortByFirstNameBackward() {
             ObjectMapper objectMapper = new ObjectMapper();
             ObjectNode objectNode = objectMapper.createObjectNode();
-            objectNode.put("firstName", "Zzzzzzzzzzzzzzz");
+            objectNode.put("firstName", "Яяяяяяяяяяяяяяя");
             objectNode.put("lastName", "Киселёв-Лопатин");
             objectNode.put("dayOfBirth", "2000-01-01");
             objectNode.put("email", "zzz@asdas.tr");
@@ -124,11 +127,12 @@ class RestApiTests {
                     .when().get("/api/users/?sort=firstName,desc")
                     .then().log().ifValidationFails()
                     .statusCode(200)
-                    .body(("_embedded.users.firstName.get(0)"), is("Zzzzzzzzzzzzzzz"));
+                    .body(("_embedded.users.firstName.get(0)"), is("Яяяяяяяяяяяяяяя"));
         }
     }
 
     @Nested
+    @DirtiesContext(classMode = AFTER_EACH_TEST_METHOD)
     public class PostMethodTests {
 
         @Test
@@ -143,10 +147,9 @@ class RestApiTests {
             given().log().all()
                     .body(objectNode)
                     .contentType(ContentType.JSON)
-                    .when().post("/api/cars")
+                    .when().post("/api/users")
                     .then().log().ifValidationFails()
-                    .statusCode(404)
-                    .body("error", is("Not Found"));
+                    .statusCode(400);
         }
 
         @Test
@@ -180,7 +183,7 @@ class RestApiTests {
             objectNode.put("firstName", "Алёна-Генриэтта");
             objectNode.put("lastName", "Ivanov");
             objectNode.put("dayOfBirth", "2000-01-01");
-            objectNode.put("email", "alyona@asdas.ru");
+            objectNode.put("email", "tgkdl@asdas.ru");
 
             ObjectNode user = given().log().all()
                     .body(objectNode)
@@ -353,6 +356,7 @@ class RestApiTests {
     }
 
     @Nested
+    @DirtiesContext(classMode = AFTER_EACH_TEST_METHOD)
     public class PutMethodTests {
 
         @Test
@@ -385,8 +389,8 @@ class RestApiTests {
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.put("firstName", "Mari");
             objectNode.put("lastName", "Ldjkgk");
-            objectNode.put("dayOfBirth", "1987-08-05");
-            objectNode.put("email", "");
+            objectNode.put("dayOfBirth", "");
+            objectNode.put("email", "fjgkgk@gdkd.com");
 
             given().log().all()
                     .body(objectNode)
@@ -395,29 +399,37 @@ class RestApiTests {
                     .then().log().ifValidationFails()
                     .statusCode(400)
                     .body("message", is("Validation failed"))
-                    .body("subErrors.get(0).message", is("не должно быть пустым"));
+                    .body("subErrors.get(0).message", is("не должно равняться null"));
         }
 
-//    @Test
-//    public void shouldCreateNewUserWhenPutInfoToNotExistingUser() {
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        ObjectNode objectNode = objectMapper.createObjectNode();
-//        objectNode.put("firstName", "Mari");
-//        objectNode.put("lastName", "Brown");
-//        objectNode.put("dayOfBirth", "1989-03-02");
-//        objectNode.put("email", "mari@gjgj.com");
-//
-//        given().log().all()
-//                .body(objectNode)
-//                .contentType(ContentType.JSON)
-//                .when().put("/api/users/51")
-//                .then().log().ifValidationFails()
-//                .statusCode(201)
-//                .body("page.totalElements", is(21));
-//    }
+    @Test
+    public void shouldCreateNewUserWhenPutInfoToNotExistingUser() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("firstName", "Mari");
+        objectNode.put("lastName", "Brown");
+        objectNode.put("dayOfBirth", "1989-03-02");
+        objectNode.put("email", "mari@gjgj.com");
+
+        ObjectNode user = given().log().all()
+                .body(objectNode)
+                .contentType(ContentType.JSON)
+                .when().put("/api/users/51")
+                .then().log().ifValidationFails()
+                .statusCode(201)
+                .extract().body().as(ObjectNode.class);
+
+        assertThat(user.get("firstName")).isEqualTo(objectNode.get("firstName"));
+        assertThat(user.get("lastName")).isEqualTo(objectNode.get("lastName"));
+        assertThat(user.get("dayOfBirth")).isEqualTo(objectNode.get("dayOfBirth"));
+        assertThat(user.get("email")).isEqualTo(objectNode.get("email"));
+
+
+    }
     }
 
     @Nested
+    @DirtiesContext(classMode = AFTER_EACH_TEST_METHOD)
     public class PatchMethodTests {
 
         @Test
@@ -469,6 +481,7 @@ class RestApiTests {
     }
 
     @Nested
+    @DirtiesContext(classMode = AFTER_EACH_TEST_METHOD)
     public class DeleteMethodTests {
 
         @Test
@@ -476,13 +489,13 @@ class RestApiTests {
             given().log().all()
                     .when().delete("/api/users/1")
                     .then().log().ifValidationFails()
-                    .statusCode(204)
-                    .extract().body();
+                    .statusCode(204);
             given().log().all()
                     .when().get("/api/users")
                     .then().log().ifValidationFails()
                     .statusCode(200)
                     .body("page.totalElements", is(19));
+
         }
 
         @Test
@@ -491,11 +504,6 @@ class RestApiTests {
                     .when().delete("/api/users/40")
                     .then().log().ifValidationFails()
                     .statusCode(404);
-            given().log().all()
-                    .when().get("/api/users")
-                    .then().log().ifValidationFails()
-                    .statusCode(200)
-                    .body("page.totalElements", is(20));
         }
     }
 
