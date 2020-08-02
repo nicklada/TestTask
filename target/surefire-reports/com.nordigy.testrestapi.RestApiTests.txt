@@ -1,14 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: com.nordigy.testrestapi.RestApiTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.663 s <<< FAILURE! - in com.nordigy.testrestapi.RestApiTests
-shouldCreateNewUser  Time elapsed: 5.972 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
+Tests run: 24, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 136.776 s <<< FAILURE! - in com.nordigy.testrestapi.RestApiTests
+shouldNotCreateNewUserWhenSurname31Symbols  Time elapsed: 29.902 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path subErrors.get(0).message doesn't match.
+Expected: is "размер должен находиться в диапазоне от 2 до 30"
+  Actual: размер должен находиться в диапазоне от 2 до 15
 
-Expecting:
- <""Ivan" (TextNode@33fa6a8b)">
-to be equal to:
- <""Ivan" (String@513f8279)">
-but was not.
-	at com.nordigy.testrestapi.RestApiTests.shouldCreateNewUser(RestApiTests.java:62)
+	at com.nordigy.testrestapi.RestApiTests.shouldNotCreateNewUserWhenSurname31Symbols(RestApiTests.java:261)
+
+shouldNotCreateNewUserWhenName16Symbols  Time elapsed: 3.522 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <201>.
+
+	at com.nordigy.testrestapi.RestApiTests.shouldNotCreateNewUserWhenName16Symbols(RestApiTests.java:224)
+
+shouldNotCreateNewUserWhenSurname1Symbol  Time elapsed: 2.629 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path subErrors.get(0).message doesn't match.
+Expected: is "размер должен находиться в диапазоне от 2 до 30"
+  Actual: размер должен находиться в диапазоне от 2 до 15
+
+	at com.nordigy.testrestapi.RestApiTests.shouldNotCreateNewUserWhenSurname1Symbol(RestApiTests.java:243)
+
+shouldNotCreateNewUserWhenName1Symbol  Time elapsed: 2.171 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path subErrors.get(0).message doesn't match.
+Expected: is "размер должен находиться в диапазоне от 2 до 15"
+  Actual: размер должен находиться в диапазоне от 2 до 30
+
+	at com.nordigy.testrestapi.RestApiTests.shouldNotCreateNewUserWhenName1Symbol(RestApiTests.java:207)
 
