@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nordigy.testrestapi.RestApiTests" time="33.294" tests="24" errors="0" skipped="0" failures="8">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nordigy.testrestapi.RestApiTests" time="57.886" tests="23" errors="0" skipped="0" failures="5">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/lada/Documents/Dins test/target/surefire/surefirebooter3131312673526930088.jar /Users/lada/Documents/Dins test/target/surefire 2020-08-02T19-15-34_562-jvmRun1 surefire18252264592245703445tmp surefire_02021010302974836407tmp"/>
+    <property name="sun.java.command" value="/Users/lada/Documents/Dins test/target/surefire/surefirebooter2346371799146486776.jar /Users/lada/Documents/Dins test/target/surefire 2020-08-03T00-48-07_627-jvmRun1 surefire17224065759922133338tmp surefire_013411538491460099375tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/lada/Documents/Dins test/target/test-classes:/Users/lada/Documents/Dins test/target/classes:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/lada/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/lada/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/Users/lada/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/Users/lada/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/Users/lada/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/lada/.m2/repository/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.0/jackson-datatype-jdk8-2.11.0.jar:/Users/lada/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.0/jackson-module-parameter-names-2.11.0.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.jar:/Users/lada/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.jar:/Users/lada/.m2/repository/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/2.3.1.RELEASE/spring-boot-starter-data-rest-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.3.1.RELEASE/spring-data-rest-webmvc-3.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/data/spring-data-rest-core/3.3.1.RELEASE/spring-data-rest-core-3.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.3.1.RELEASE/spring-boot-starter-data-jpa-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.3.1.RELEASE/spring-boot-starter-jdbc-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar:/Users/lada/.m2/repository/org/springframework/spring-jdbc/5.2.7.RELEASE/spring-jdbc-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/Users/lada/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/lada/.m2/repository/org/hibernate/hibernate-core/5.4.17.Final/hibernate-core-5.4.17.Final.jar:/Users/lada/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/Users/lada/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/lada/.m2/repository/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.jar:/Users/lada/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/lada/.m2/repository/org/jboss/jandex/2.1.3.Final/jandex-2.1.3.Final.jar:/Users/lada/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/Users/lada/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/lada/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/Users/lada/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/Users/lada/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/Users/lada/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/lada/.m2/repository/org/springframework/data/spring-data-jpa/2.3.1.RELEASE/spring-data-jpa-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/data/spring-data-commons/2.3.1.RELEASE/spring-data-commons-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-orm/5.2.7.RELEASE/spring-orm-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-tx/5.2.7.RELEASE/spring-tx-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/spring-aspects/5.2.7.RELEASE/spring-aspects-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/lada/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/lada/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/lada/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/lada/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/lada/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/lada/.m2/repository/org/assertj/assertj-core/3.16.1/assertj-core-3.16.1.jar:/Users/lada/.m2/repository/org/junit/jupiter/junit-jupiter/5.6.2/junit-jupiter-5.6.2.jar:/Users/lada/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/Users/lada/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/lada/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/Users/lada/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.2/junit-jupiter-params-5.6.2.jar:/Users/lada/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/Users/lada/.m2/repository/org/junit/vintage/junit-vintage-engine/5.6.2/junit-vintage-engine-5.6.2.jar:/Users/lada/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/lada/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/Users/lada/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/lada/.m2/repository/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar:/Users/lada/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.jar:/Users/lada/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/lada/.m2/repository/org/mockito/mockito-junit-jupiter/3.3.3/mockito-junit-jupiter-3.3.3.jar:/Users/lada/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/lada/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/lada/.m2/repository/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.jar:/Users/lada/.m2/repository/org/xmlunit/xmlunit-core/2.7.0/xmlunit-core-2.7.0.jar:/Users/lada/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.jar:/Users/lada/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/Users/lada/.m2/repository/org/hibernate/validator/hibernate-validator/6.1.5.Final/hibernate-validator-6.1.5.Final.jar:/Users/lada/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/lada/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar:/Users/lada/.m2/repository/com/querydsl/querydsl-apt/4.3.1/querydsl-apt-4.3.1.jar:/Users/lada/.m2/repository/com/querydsl/querydsl-codegen/4.3.1/querydsl-codegen-4.3.1.jar:/Users/lada/.m2/repository/com/mysema/codegen/codegen/0.6.8/codegen-0.6.8.jar:/Users/lada/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.3.1/ecj-4.3.1.jar:/Users/lada/.m2/repository/org/reflections/reflections/0.9.9/reflections-0.9.9.jar:/Users/lada/.m2/repository/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar:/Users/lada/.m2/repository/com/querydsl/querydsl-jpa/4.3.1/querydsl-jpa-4.3.1.jar:/Users/lada/.m2/repository/com/querydsl/querydsl-core/4.3.1/querydsl-core-4.3.1.jar:/Users/lada/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/Users/lada/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/lada/.m2/repository/com/mysema/commons/mysema-commons-lang/0.2.4/mysema-commons-lang-0.2.4.jar:/Users/lada/.m2/repository/com/infradna/tool/bridge-method-annotation/1.13/bridge-method-annotation-1.13.jar:/Users/lada/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/lada/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/lada/.m2/repository/org/xerial/sqlite-jdbc/3.31.1/sqlite-jdbc-3.31.1.jar:/Users/lada/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/lada/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/Users/lada/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.0/jackson-datatype-jsr310-2.11.0.jar:/Users/lada/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/lada/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/lada/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/lada/.m2/repository/io/springfox/springfox-swagger2/2.10.0/springfox-swagger2-2.10.0.jar:/Users/lada/.m2/repository/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar:/Users/lada/.m2/repository/io/swagger/swagger-models/1.5.20/swagger-models-1.5.20.jar:/Users/lada/.m2/repository/io/springfox/springfox-spi/2.10.0/springfox-spi-2.10.0.jar:/Users/lada/.m2/repository/io/springfox/springfox-core/2.10.0/springfox-core-2.10.0.jar:/Users/lada/.m2/repository/io/springfox/springfox-schema/2.10.0/springfox-schema-2.10.0.jar:/Users/lada/.m2/repository/io/springfox/springfox-swagger-common/2.10.0/springfox-swagger-common-2.10.0.jar:/Users/lada/.m2/repository/io/springfox/springfox-spring-web/2.10.0/springfox-spring-web-2.10.0.jar:/Users/lada/.m2/repository/io/github/classgraph/classgraph/4.1.7/classgraph-4.1.7.jar:/Users/lada/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/lada/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/Users/lada/.m2/repository/org/springframework/plugin/spring-plugin-metadata/2.0.0.RELEASE/spring-plugin-metadata-2.0.0.RELEASE.jar:/Users/lada/.m2/repository/org/mapstruct/mapstruct/1.3.1.Final/mapstruct-1.3.1.Final.jar:/Users/lada/.m2/repository/io/springfox/springfox-data-rest/2.10.0/springfox-data-rest-2.10.0.jar:/Users/lada/.m2/repository/io/springfox/springfox-spring-webmvc/2.10.0/springfox-spring-webmvc-2.10.0.jar:/Users/lada/.m2/repository/org/springframework/hateoas/spring-hateoas/1.1.0.RELEASE/spring-hateoas-1.1.0.RELEASE.jar:/Users/lada/.m2/repository/io/springfox/springfox-swagger-ui/2.10.0/springfox-swagger-ui-2.10.0.jar:/Users/lada/.m2/repository/io/springfox/springfox-bean-validators/2.10.0/springfox-bean-validators-2.10.0.jar:/Users/lada/.m2/repository/io/rest-assured/rest-assured/4.2.0/rest-assured-4.2.0.jar:/Users/lada/.m2/repository/org/codehaus/groovy/groovy/2.5.12/groovy-2.5.12.jar:/Users/lada/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.12/groovy-xml-2.5.12.jar:/Users/lada/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/Users/lada/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/lada/.m2/repository/commons-codec/commons-codec/1.14/commons-codec-1.14.jar:/Users/lada/.m2/repository/org/apache/httpcomponents/httpmime/4.5.12/httpmime-4.5.12.jar:/Users/lada/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/lada/.m2/repository/io/rest-assured/json-path/4.2.0/json-path-4.2.0.jar:/Users/lada/.m2/repository/org/codehaus/groovy/groovy-json/2.5.12/groovy-json-2.5.12.jar:/Users/lada/.m2/repository/io/rest-assured/xml-path/4.2.0/xml-path-4.2.0.jar:/Users/lada/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/lada/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/lada/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/lada/.m2/repository/io/rest-assured/rest-assured-common/4.2.0/rest-assured-common-4.2.0.jar:/Users/lada/.m2/repository/org/hamcrest/hamcrest-library/2.2/hamcrest-library-2.2.jar:/Users/lada/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/lada/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/lada/Documents/Dins test/target/surefire/surefirebooter3131312673526930088.jar"/>
+    <property name="surefire.real.class.path" value="/Users/lada/Documents/Dins test/target/surefire/surefirebooter2346371799146486776.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.6+10"/>
@@ -62,375 +62,29 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="shouldDeleteExistingUser" classname="com.nordigy.testrestapi.RestApiTests$DeleteMethodTests" time="4.321"/>
-  <testcase name="shouldDoNothingWhenDeleteNotExistingUser" classname="com.nordigy.testrestapi.RestApiTests$DeleteMethodTests" time="0.43">
-    <failure message="1 expectation failed.&#10;JSON path page.totalElements doesn&apos;t match.&#10;Expected: is &lt;20&gt;&#10;  Actual: 19&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-1 expectation failed.
-JSON path page.totalElements doesn't match.
-Expected: is <20>
-  Actual: 19
-
-	at com.nordigy.testrestapi.RestApiTests$DeleteMethodTests.shouldDoNothingWhenDeleteNotExistingUser(RestApiTests.java:499)
-]]></failure>
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	http://localhost:65206/api/users/40
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	http://localhost:65206/api/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Content-Type: application/hal+json
-Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:04 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "_embedded": {
-        "users": [
-            {
-                "id": 2,
-                "firstName": "John",
-                "lastName": "Erickson",
-                "email": "workingemail-2@gmail.com",
-                "dayOfBirth": "1983-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/2"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/2"
-                    }
-                }
-            },
-            {
-                "id": 3,
-                "firstName": "Alex",
-                "lastName": "Portman",
-                "email": "workingemail-3@gmail.com",
-                "dayOfBirth": "1982-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/3"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/3"
-                    }
-                }
-            },
-            {
-                "id": 4,
-                "firstName": "Alex",
-                "lastName": "Erickson",
-                "email": "workingemail-4@gmail.com",
-                "dayOfBirth": "1953-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/4"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/4"
-                    }
-                }
-            },
-            {
-                "id": 5,
-                "firstName": "Mark",
-                "lastName": "Doe",
-                "email": "workingemail-5@gmail.com",
-                "dayOfBirth": "1933-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/5"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/5"
-                    }
-                }
-            },
-            {
-                "id": 6,
-                "firstName": "Mark",
-                "lastName": "Erickson",
-                "email": "workingemail-6@gmail.com",
-                "dayOfBirth": "1952-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/6"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/6"
-                    }
-                }
-            },
-            {
-                "id": 7,
-                "firstName": "Mark",
-                "lastName": "Portman",
-                "email": "workingemail-7@gmail.com",
-                "dayOfBirth": "1957-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/7"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/7"
-                    }
-                }
-            },
-            {
-                "id": 8,
-                "firstName": "Mark",
-                "lastName": "Erickson",
-                "email": "workingemail-8@gmail.com",
-                "dayOfBirth": "1948-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/8"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/8"
-                    }
-                }
-            },
-            {
-                "id": 9,
-                "firstName": "Alex",
-                "lastName": "Roach",
-                "email": "workingemail-9@gmail.com",
-                "dayOfBirth": "1933-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/9"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/9"
-                    }
-                }
-            },
-            {
-                "id": 10,
-                "firstName": "Mary",
-                "lastName": "Erickson",
-                "email": "workingemail-10@gmail.com",
-                "dayOfBirth": "1992-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/10"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/10"
-                    }
-                }
-            },
-            {
-                "id": 11,
-                "firstName": "Mark",
-                "lastName": "Smith",
-                "email": "workingemail-11@gmail.com",
-                "dayOfBirth": "1958-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/11"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/11"
-                    }
-                }
-            },
-            {
-                "id": 12,
-                "firstName": "Alex",
-                "lastName": "Erickson",
-                "email": "workingemail-12@gmail.com",
-                "dayOfBirth": "1960-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/12"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/12"
-                    }
-                }
-            },
-            {
-                "id": 13,
-                "firstName": "Nataly",
-                "lastName": "Portman",
-                "email": "workingemail-13@gmail.com",
-                "dayOfBirth": "1963-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/13"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/13"
-                    }
-                }
-            },
-            {
-                "id": 14,
-                "firstName": "Nataly",
-                "lastName": "Doe",
-                "email": "workingemail-14@gmail.com",
-                "dayOfBirth": "1939-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/14"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/14"
-                    }
-                }
-            },
-            {
-                "id": 15,
-                "firstName": "Mary",
-                "lastName": "Li",
-                "email": "workingemail-15@gmail.com",
-                "dayOfBirth": "1942-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/15"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/15"
-                    }
-                }
-            },
-            {
-                "id": 16,
-                "firstName": "John",
-                "lastName": "Portman",
-                "email": "workingemail-16@gmail.com",
-                "dayOfBirth": "1978-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/16"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/16"
-                    }
-                }
-            },
-            {
-                "id": 17,
-                "firstName": "Robert",
-                "lastName": "Portman",
-                "email": "workingemail-17@gmail.com",
-                "dayOfBirth": "1954-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/17"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/17"
-                    }
-                }
-            },
-            {
-                "id": 18,
-                "firstName": "John",
-                "lastName": "Li",
-                "email": "workingemail-18@gmail.com",
-                "dayOfBirth": "1975-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/18"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/18"
-                    }
-                }
-            },
-            {
-                "id": 19,
-                "firstName": "Mark",
-                "lastName": "Erickson",
-                "email": "workingemail-19@gmail.com",
-                "dayOfBirth": "1971-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/19"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/19"
-                    }
-                }
-            },
-            {
-                "id": 20,
-                "firstName": "Nataly",
-                "lastName": "Portman",
-                "email": "workingemail-20@gmail.com",
-                "dayOfBirth": "1955-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/20"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/20"
-                    }
-                }
-            }
-        ]
-    },
-    "_links": {
-        "self": {
-            "href": "http://localhost:65206/api/users"
-        },
-        "profile": {
-            "href": "http://localhost:65206/api/profile/users"
-        }
-    },
-    "page": {
-        "size": 20,
-        "totalElements": 19,
-        "totalPages": 1,
-        "number": 0
-    }
-}
-]]></system-out>
-  </testcase>
-  <testcase name="shouldPatchNewInfoToExistingUser" classname="com.nordigy.testrestapi.RestApiTests$PatchMethodTests" time="1.321"/>
-  <testcase name="shouldNotPatchNewInfoToNotExistingUser" classname="com.nordigy.testrestapi.RestApiTests$PatchMethodTests" time="0.037"/>
-  <testcase name="shouldPutNewInfoToExistingUser" classname="com.nordigy.testrestapi.RestApiTests$PutMethodTests" time="0.088"/>
-  <testcase name="shouldNotPutNewInfoToExistingUserWhenSomeFieldsEmpty" classname="com.nordigy.testrestapi.RestApiTests$PutMethodTests" time="0.231"/>
-  <testcase name="shouldNotCreateNewUserWhenSurname31Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.237">
+  <testcase name="shouldDeleteExistingUser" classname="com.nordigy.testrestapi.RestApiTests$DeleteMethodTests" time="5.267"/>
+  <testcase name="shouldDoNothingWhenDeleteNotExistingUser" classname="com.nordigy.testrestapi.RestApiTests$DeleteMethodTests" time="0.137"/>
+  <testcase name="shouldPatchNewInfoToExistingUser" classname="com.nordigy.testrestapi.RestApiTests$PatchMethodTests" time="1.566"/>
+  <testcase name="shouldNotPatchNewInfoToNotExistingUser" classname="com.nordigy.testrestapi.RestApiTests$PatchMethodTests" time="0.044"/>
+  <testcase name="shouldPutNewInfoToExistingUser" classname="com.nordigy.testrestapi.RestApiTests$PutMethodTests" time="0.083"/>
+  <testcase name="shouldNotPutNewInfoToExistingUserWhenSomeFieldsEmpty" classname="com.nordigy.testrestapi.RestApiTests$PutMethodTests" time="0.238"/>
+  <testcase name="shouldCreateNewUserWhenPutInfoToNotExistingUser" classname="com.nordigy.testrestapi.RestApiTests$PutMethodTests" time="0.072"/>
+  <testcase name="shouldNotCreateNewUserWhenSurname31Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.248">
     <failure message="1 expectation failed.&#10;JSON path subErrors.get(0).message doesn&apos;t match.&#10;Expected: is &quot;размер должен находиться в диапазоне от 2 до 30&quot;&#10;  Actual: размер должен находиться в диапазоне от 2 до 15&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
 1 expectation failed.
 JSON path subErrors.get(0).message doesn't match.
 Expected: is "размер должен находиться в диапазоне от 2 до 30"
   Actual: размер должен находиться в диапазоне от 2 до 15
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname31Symbols(RestApiTests.java:270)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname31Symbols(RestApiTests.java:272)
 </failure>
-    <system-out><![CDATA[2020-08-02 19:16:06.338  INFO 63462 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nordigy.testrestapi.RestApiTests$PostMethodTests], using DelegatingSmartContextLoader
-2020-08-02 19:16:06.339  INFO 63462 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.nordigy.testrestapi.RestApiTests$PostMethodTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-08-02 19:16:06.339  INFO 63462 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nordigy.testrestapi.RestApiTests$PostMethodTests]: PostMethodTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2020-08-02 19:16:06.342  INFO 63462 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-08-02 19:16:06.343  INFO 63462 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@738a1324, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73ec417b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@816272a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@46984524, org.springframework.test.context.support.DirtiesContextTestExecutionListener@65a86de0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@745e1fb7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d484961, org.springframework.test.context.event.EventPublishingTestExecutionListener@497d9489, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f9c272b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6bbb3ec8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@64b7719f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@414b785c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4fe0aa21, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7d1f906b]
+    <system-out><![CDATA[2020-08-03 00:49:06.405  INFO 72573 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nordigy.testrestapi.RestApiTests$PostMethodTests], using DelegatingSmartContextLoader
+2020-08-03 00:49:06.406  INFO 72573 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.nordigy.testrestapi.RestApiTests$PostMethodTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-03 00:49:06.407  INFO 72573 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nordigy.testrestapi.RestApiTests$PostMethodTests]: PostMethodTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-03 00:49:06.410  INFO 72573 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-03 00:49:06.414  INFO 72573 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71669835, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@727d937a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@130901fd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@659f5f32, org.springframework.test.context.support.DirtiesContextTestExecutionListener@20fdd484, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3e0575a2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@65589d76, org.springframework.test.context.event.EventPublishingTestExecutionListener@7a213820, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@34b69a14, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@210b4145, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@19cb3f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@738a1324, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@73ec417b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@816272a]
 Request method:	POST
-Request URI:	http://localhost:65206/api/users
+Request URI:	http://localhost:54456/api/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -453,12 +107,12 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:05 GMT
+Date: Sun, 02 Aug 2020 21:49:05 GMT
 Connection: close
 
 {
     "status": "BAD_REQUEST",
-    "timestamp": "02-08-2020 07:16:06",
+    "timestamp": "03-08-2020 12:49:06",
     "message": "Validation failed",
     "debugMessage": null,
     "subErrors": [
@@ -472,16 +126,16 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="shouldNotCreateNewUserWhenDateInvalidFormat" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.11"/>
-  <testcase name="shouldNotCreateNewUserWhenName16Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.096">
+  <testcase name="shouldNotCreateNewUserWhenDateInvalidFormat" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.137"/>
+  <testcase name="shouldNotCreateNewUserWhenName16Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.071">
     <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <201>.
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName16Symbols(RestApiTests.java:233)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName16Symbols(RestApiTests.java:235)
 ]]></failure>
     <system-out><![CDATA[Request method:	POST
-Request URI:	http://localhost:65206/api/users
+Request URI:	http://localhost:54456/api/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -502,41 +156,41 @@ HTTP/1.1 201
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
-Location: http://localhost:65206/api/users/21
+Location: http://localhost:54456/api/users/22
 Content-Type: application/hal+json
 Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:06 GMT
+Date: Sun, 02 Aug 2020 21:49:06 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
 {
-    "id": 21,
+    "id": 22,
     "firstName": "Ibhjllkjhgfdddrt",
     "lastName": "Ivanov",
     "email": "alyona@asdas.ru",
     "dayOfBirth": "2000-01-01",
     "_links": {
         "self": {
-            "href": "http://localhost:65206/api/users/21"
+            "href": "http://localhost:54456/api/users/22"
         },
         "user": {
-            "href": "http://localhost:65206/api/users/21"
+            "href": "http://localhost:54456/api/users/22"
         }
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="shouldNotCreateNewUserWhenSurname1Symbol" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.097">
+  <testcase name="shouldNotCreateNewUserWhenSurname1Symbol" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.074">
     <failure message="1 expectation failed.&#10;JSON path subErrors.get(0).message doesn&apos;t match.&#10;Expected: is &quot;размер должен находиться в диапазоне от 2 до 30&quot;&#10;  Actual: размер должен находиться в диапазоне от 2 до 15&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
 1 expectation failed.
 JSON path subErrors.get(0).message doesn't match.
 Expected: is "размер должен находиться в диапазоне от 2 до 30"
   Actual: размер должен находиться в диапазоне от 2 до 15
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname1Symbol(RestApiTests.java:252)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname1Symbol(RestApiTests.java:254)
 </failure>
     <system-out><![CDATA[Request method:	POST
-Request URI:	http://localhost:65206/api/users
+Request URI:	http://localhost:54456/api/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -559,12 +213,12 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:06 GMT
+Date: Sun, 02 Aug 2020 21:49:06 GMT
 Connection: close
 
 {
     "status": "BAD_REQUEST",
-    "timestamp": "02-08-2020 07:16:06",
+    "timestamp": "03-08-2020 12:49:06",
     "message": "Validation failed",
     "debugMessage": null,
     "subErrors": [
@@ -578,18 +232,18 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="shouldNotCreateNewUserWhenEmptyFields" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.079"/>
-  <testcase name="shouldNotCreateNewUserWhenName1Symbol" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.071">
+  <testcase name="shouldNotCreateNewUserWhenEmptyFields" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.065"/>
+  <testcase name="shouldNotCreateNewUserWhenName1Symbol" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.084">
     <failure message="1 expectation failed.&#10;JSON path subErrors.get(0).message doesn&apos;t match.&#10;Expected: is &quot;размер должен находиться в диапазоне от 2 до 15&quot;&#10;  Actual: размер должен находиться в диапазоне от 2 до 30&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
 1 expectation failed.
 JSON path subErrors.get(0).message doesn't match.
 Expected: is "размер должен находиться в диапазоне от 2 до 15"
   Actual: размер должен находиться в диапазоне от 2 до 30
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName1Symbol(RestApiTests.java:216)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName1Symbol(RestApiTests.java:218)
 </failure>
     <system-out><![CDATA[Request method:	POST
-Request URI:	http://localhost:65206/api/users
+Request URI:	http://localhost:54456/api/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -612,12 +266,12 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:06 GMT
+Date: Sun, 02 Aug 2020 21:49:06 GMT
 Connection: close
 
 {
     "status": "BAD_REQUEST",
-    "timestamp": "02-08-2020 07:16:07",
+    "timestamp": "03-08-2020 12:49:07",
     "message": "Validation failed",
     "debugMessage": null,
     "subErrors": [
@@ -631,73 +285,25 @@ Connection: close
 }
 ]]></system-out>
   </testcase>
-  <testcase name="shouldNotCreateNewUserWhenDateInFuture" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.293"/>
-  <testcase name="shouldNotCreateNewUserWhenEmailInvalid" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.047"/>
-  <testcase name="shouldCreateNewUserWhenName15Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.075">
-    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;409&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <201> but was <409>.
-
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldCreateNewUserWhenName15Symbols(RestApiTests.java:191)
-]]></failure>
-    <system-out><![CDATA[Request method:	POST
-Request URI:	http://localhost:65206/api/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "firstName": "Алёна-Генриэтта",
-    "lastName": "Ivanov",
-    "dayOfBirth": "2000-01-01",
-    "email": "alyona@asdas.ru"
-}
-2020-08-02 19:16:07.432  WARN 63462 --- [o-auto-1-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
-2020-08-02 19:16:07.433 ERROR 63462 --- [o-auto-1-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Нарушение уникального индекса или первичного ключа: "PUBLIC.UK_OB8KQYQQGMEFL0ACO34AKDTPE_INDEX_2 ON PUBLIC.USER(EMAIL) VALUES 21"
-Unique index or primary key violation: "PUBLIC.UK_OB8KQYQQGMEFL0ACO34AKDTPE_INDEX_2 ON PUBLIC.USER(EMAIL) VALUES 21"; SQL statement:
-insert into user (id, day_of_birth, email, first_name, last_name) values (null, ?, ?, ?, ?) [23505-200]
-HTTP/1.1 409 
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:06 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "status": "CONFLICT",
-    "timestamp": "02-08-2020 07:16:07",
-    "message": "Database error",
-    "debugMessage": "Нарушение уникального индекса или первичного ключа: \"PUBLIC.UK_OB8KQYQQGMEFL0ACO34AKDTPE_INDEX_2 ON PUBLIC.USER(EMAIL) VALUES 21\"\nUnique index or primary key violation: \"PUBLIC.UK_OB8KQYQQGMEFL0ACO34AKDTPE_INDEX_2 ON PUBLIC.USER(EMAIL) VALUES 21\"; SQL statement:\ninsert into user (id, day_of_birth, email, first_name, last_name) values (null, ?, ?, ?, ?) [23505-200]",
-    "subErrors": null
-}
-]]></system-out>
-  </testcase>
-  <testcase name="shouldCreateNewUserWhenName2Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.062"/>
-  <testcase name="shouldNotCreateNewUserWhenEmailAlreadyExists" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.519"/>
-  <testcase name="shouldNotReturnUserIfNotExists" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.608"/>
-  <testcase name="shouldReturnUserIfExists" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.135"/>
-  <testcase name="shouldReturnCorrectPageSize" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.369"/>
-  <testcase name="shouldSortByFirstNameBackward" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.639"/>
-  <testcase name="shouldReturnCorrectNumberOfPages" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.216">
+  <testcase name="shouldNotCreateNewUserWhenDateInFuture" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.206"/>
+  <testcase name="shouldNotCreateNewUserWhenEmailInvalid" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.119"/>
+  <testcase name="shouldCreateNewUserWhenName15Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.083"/>
+  <testcase name="shouldCreateNewUserWhenName2Symbols" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.09"/>
+  <testcase name="shouldNotCreateNewUserWhenEmailAlreadyExists" classname="com.nordigy.testrestapi.RestApiTests$PostMethodTests" time="0.396"/>
+  <testcase name="shouldNotReturnUserIfNotExists" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.06"/>
+  <testcase name="shouldReturnUserIfExists" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.102"/>
+  <testcase name="shouldSortByFirstNameBackward" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.522"/>
+  <testcase name="shouldReturnCorrectNumberOfPages" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.272">
     <failure message="1 expectation failed.&#10;JSON path page.totalPages doesn&apos;t match.&#10;Expected: is &lt;1&gt;&#10;  Actual: 2&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 JSON path page.totalPages doesn't match.
 Expected: is <1>
   Actual: 2
 
-	at com.nordigy.testrestapi.RestApiTests$GetMethodTests.shouldReturnCorrectNumberOfPages(RestApiTests.java:64)
+	at com.nordigy.testrestapi.RestApiTests$GetMethodTests.shouldReturnCorrectNumberOfPages(RestApiTests.java:66)
 ]]></failure>
     <system-out><![CDATA[Request method:	GET
-Request URI:	http://localhost:65206/api/users
+Request URI:	http://localhost:54456/api/users
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -713,7 +319,7 @@ Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/hal+json
 Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:10 GMT
+Date: Sun, 02 Aug 2020 21:49:09 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -723,15 +329,15 @@ Connection: keep-alive
             {
                 "id": 2,
                 "firstName": "John",
-                "lastName": "Erickson",
+                "lastName": "Doe",
                 "email": "workingemail-2@gmail.com",
-                "dayOfBirth": "1983-08-02",
+                "dayOfBirth": "1964-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/2"
+                        "href": "http://localhost:54456/api/users/2"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/2"
+                        "href": "http://localhost:54456/api/users/2"
                     }
                 }
             },
@@ -743,280 +349,280 @@ Connection: keep-alive
                 "dayOfBirth": "1967-01-01",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/3"
+                        "href": "http://localhost:54456/api/users/3"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/3"
+                        "href": "http://localhost:54456/api/users/3"
                     }
                 }
             },
             {
                 "id": 4,
-                "firstName": "Alex",
-                "lastName": "Erickson",
+                "firstName": "Robert",
+                "lastName": "Roach",
                 "email": "workingemail-4@gmail.com",
-                "dayOfBirth": "1953-08-02",
+                "dayOfBirth": "1941-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/4"
+                        "href": "http://localhost:54456/api/users/4"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/4"
+                        "href": "http://localhost:54456/api/users/4"
                     }
                 }
             },
             {
                 "id": 5,
-                "firstName": "Mark",
-                "lastName": "Doe",
+                "firstName": "Alex",
+                "lastName": "Roach",
                 "email": "workingemail-5@gmail.com",
-                "dayOfBirth": "1933-08-02",
+                "dayOfBirth": "1993-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/5"
+                        "href": "http://localhost:54456/api/users/5"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/5"
+                        "href": "http://localhost:54456/api/users/5"
                     }
                 }
             },
             {
                 "id": 6,
-                "firstName": "Mark",
-                "lastName": "Erickson",
+                "firstName": "Mary",
+                "lastName": "Doe",
                 "email": "workingemail-6@gmail.com",
-                "dayOfBirth": "1952-08-02",
+                "dayOfBirth": "1943-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/6"
+                        "href": "http://localhost:54456/api/users/6"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/6"
+                        "href": "http://localhost:54456/api/users/6"
                     }
                 }
             },
             {
                 "id": 7,
                 "firstName": "Mark",
-                "lastName": "Portman",
+                "lastName": "Roach",
                 "email": "workingemail-7@gmail.com",
-                "dayOfBirth": "1957-08-02",
+                "dayOfBirth": "1971-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/7"
+                        "href": "http://localhost:54456/api/users/7"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/7"
+                        "href": "http://localhost:54456/api/users/7"
                     }
                 }
             },
             {
                 "id": 8,
-                "firstName": "Mark",
-                "lastName": "Erickson",
+                "firstName": "Nataly",
+                "lastName": "Doe",
                 "email": "workingemail-8@gmail.com",
-                "dayOfBirth": "1948-08-02",
+                "dayOfBirth": "1966-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/8"
+                        "href": "http://localhost:54456/api/users/8"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/8"
+                        "href": "http://localhost:54456/api/users/8"
                     }
                 }
             },
             {
                 "id": 9,
-                "firstName": "Alex",
+                "firstName": "John",
                 "lastName": "Roach",
                 "email": "workingemail-9@gmail.com",
-                "dayOfBirth": "1933-08-02",
+                "dayOfBirth": "1994-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/9"
+                        "href": "http://localhost:54456/api/users/9"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/9"
+                        "href": "http://localhost:54456/api/users/9"
                     }
                 }
             },
             {
                 "id": 10,
-                "firstName": "Mary",
-                "lastName": "Erickson",
+                "firstName": "Robert",
+                "lastName": "Smith",
                 "email": "workingemail-10@gmail.com",
-                "dayOfBirth": "1992-08-02",
+                "dayOfBirth": "1991-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/10"
+                        "href": "http://localhost:54456/api/users/10"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/10"
+                        "href": "http://localhost:54456/api/users/10"
                     }
                 }
             },
             {
                 "id": 11,
-                "firstName": "Mark",
-                "lastName": "Smith",
+                "firstName": "Robert",
+                "lastName": "Erickson",
                 "email": "workingemail-11@gmail.com",
-                "dayOfBirth": "1958-08-02",
+                "dayOfBirth": "1956-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/11"
+                        "href": "http://localhost:54456/api/users/11"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/11"
+                        "href": "http://localhost:54456/api/users/11"
                     }
                 }
             },
             {
                 "id": 12,
                 "firstName": "Ani",
-                "lastName": "Erickson",
+                "lastName": "Roach",
                 "email": "ani@asdas.ru",
-                "dayOfBirth": "1960-08-02",
+                "dayOfBirth": "1973-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/12"
+                        "href": "http://localhost:54456/api/users/12"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/12"
+                        "href": "http://localhost:54456/api/users/12"
                     }
                 }
             },
             {
                 "id": 13,
-                "firstName": "Nataly",
-                "lastName": "Portman",
+                "firstName": "Mark",
+                "lastName": "Li",
                 "email": "workingemail-13@gmail.com",
-                "dayOfBirth": "1963-08-02",
+                "dayOfBirth": "1946-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/13"
+                        "href": "http://localhost:54456/api/users/13"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/13"
+                        "href": "http://localhost:54456/api/users/13"
                     }
                 }
             },
             {
                 "id": 14,
-                "firstName": "Nataly",
-                "lastName": "Doe",
+                "firstName": "Mary",
+                "lastName": "Li",
                 "email": "workingemail-14@gmail.com",
-                "dayOfBirth": "1939-08-02",
+                "dayOfBirth": "1950-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/14"
+                        "href": "http://localhost:54456/api/users/14"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/14"
+                        "href": "http://localhost:54456/api/users/14"
                     }
                 }
             },
             {
                 "id": 15,
-                "firstName": "Mary",
-                "lastName": "Li",
+                "firstName": "John",
+                "lastName": "Doe",
                 "email": "workingemail-15@gmail.com",
-                "dayOfBirth": "1942-08-02",
+                "dayOfBirth": "1973-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/15"
+                        "href": "http://localhost:54456/api/users/15"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/15"
+                        "href": "http://localhost:54456/api/users/15"
                     }
                 }
             },
             {
                 "id": 16,
-                "firstName": "John",
-                "lastName": "Portman",
+                "firstName": "Mary",
+                "lastName": "Roach",
                 "email": "workingemail-16@gmail.com",
-                "dayOfBirth": "1978-08-02",
+                "dayOfBirth": "1993-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/16"
+                        "href": "http://localhost:54456/api/users/16"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/16"
+                        "href": "http://localhost:54456/api/users/16"
                     }
                 }
             },
             {
                 "id": 17,
-                "firstName": "Robert",
+                "firstName": "Mark",
                 "lastName": "Portman",
                 "email": "workingemail-17@gmail.com",
-                "dayOfBirth": "1954-08-02",
+                "dayOfBirth": "1946-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/17"
+                        "href": "http://localhost:54456/api/users/17"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/17"
+                        "href": "http://localhost:54456/api/users/17"
                     }
                 }
             },
             {
                 "id": 18,
-                "firstName": "John",
-                "lastName": "Li",
+                "firstName": "Alex",
+                "lastName": "Smith",
                 "email": "workingemail-18@gmail.com",
-                "dayOfBirth": "1975-08-02",
+                "dayOfBirth": "1969-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/18"
+                        "href": "http://localhost:54456/api/users/18"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/18"
+                        "href": "http://localhost:54456/api/users/18"
                     }
                 }
             },
             {
                 "id": 19,
-                "firstName": "Mark",
+                "firstName": "Mary",
                 "lastName": "Erickson",
                 "email": "workingemail-19@gmail.com",
-                "dayOfBirth": "1971-08-02",
+                "dayOfBirth": "1933-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/19"
+                        "href": "http://localhost:54456/api/users/19"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/19"
+                        "href": "http://localhost:54456/api/users/19"
                     }
                 }
             },
             {
                 "id": 20,
-                "firstName": "Nataly",
-                "lastName": "Portman",
+                "firstName": "Robert",
+                "lastName": "Li",
                 "email": "workingemail-20@gmail.com",
-                "dayOfBirth": "1955-08-02",
+                "dayOfBirth": "1937-08-03",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/20"
+                        "href": "http://localhost:54456/api/users/20"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/20"
+                        "href": "http://localhost:54456/api/users/20"
                     }
                 }
             },
             {
                 "id": 21,
-                "firstName": "Ibhjllkjhgfdddrt",
-                "lastName": "Ivanov",
-                "email": "alyona@asdas.ru",
-                "dayOfBirth": "2000-01-01",
+                "firstName": "Mari",
+                "lastName": "Brown",
+                "email": "mari@gjgj.com",
+                "dayOfBirth": "1989-03-02",
                 "_links": {
                     "self": {
-                        "href": "http://localhost:65206/api/users/21"
+                        "href": "http://localhost:54456/api/users/21"
                     },
                     "user": {
-                        "href": "http://localhost:65206/api/users/21"
+                        "href": "http://localhost:54456/api/users/21"
                     }
                 }
             }
@@ -1024,390 +630,29 @@ Connection: keep-alive
     },
     "_links": {
         "first": {
-            "href": "http://localhost:65206/api/users?page=0&size=20"
+            "href": "http://localhost:54456/api/users?page=0&size=20"
         },
         "self": {
-            "href": "http://localhost:65206/api/users"
+            "href": "http://localhost:54456/api/users"
         },
         "next": {
-            "href": "http://localhost:65206/api/users?page=1&size=20"
+            "href": "http://localhost:54456/api/users?page=1&size=20"
         },
         "last": {
-            "href": "http://localhost:65206/api/users?page=1&size=20"
+            "href": "http://localhost:54456/api/users?page=1&size=20"
         },
         "profile": {
-            "href": "http://localhost:65206/api/profile/users"
+            "href": "http://localhost:54456/api/profile/users"
         }
     },
     "page": {
         "size": 20,
-        "totalElements": 22,
+        "totalElements": 24,
         "totalPages": 2,
         "number": 0
     }
 }
 ]]></system-out>
   </testcase>
-  <testcase name="shouldSortByFirstNameForward" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.228"/>
-  <testcase name="shouldReturnCorrectUsersListSize" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.243">
-    <failure message="1 expectation failed.&#10;JSON path page.totalElements doesn&apos;t match.&#10;Expected: is &lt;20&gt;&#10;  Actual: 23&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-1 expectation failed.
-JSON path page.totalElements doesn't match.
-Expected: is <20>
-  Actual: 23
-
-	at com.nordigy.testrestapi.RestApiTests$GetMethodTests.shouldReturnCorrectUsersListSize(RestApiTests.java:46)
-]]></failure>
-    <system-out><![CDATA[Request method:	GET
-Request URI:	http://localhost:65206/api/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Content-Type: application/hal+json
-Transfer-Encoding: chunked
-Date: Sun, 02 Aug 2020 16:16:10 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "_embedded": {
-        "users": [
-            {
-                "id": 2,
-                "firstName": "John",
-                "lastName": "Erickson",
-                "email": "workingemail-2@gmail.com",
-                "dayOfBirth": "1983-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/2"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/2"
-                    }
-                }
-            },
-            {
-                "id": 3,
-                "firstName": "Julia",
-                "lastName": "Smith",
-                "email": "juli@asdas.ru",
-                "dayOfBirth": "1967-01-01",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/3"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/3"
-                    }
-                }
-            },
-            {
-                "id": 4,
-                "firstName": "Alex",
-                "lastName": "Erickson",
-                "email": "workingemail-4@gmail.com",
-                "dayOfBirth": "1953-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/4"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/4"
-                    }
-                }
-            },
-            {
-                "id": 5,
-                "firstName": "Mark",
-                "lastName": "Doe",
-                "email": "workingemail-5@gmail.com",
-                "dayOfBirth": "1933-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/5"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/5"
-                    }
-                }
-            },
-            {
-                "id": 6,
-                "firstName": "Mark",
-                "lastName": "Erickson",
-                "email": "workingemail-6@gmail.com",
-                "dayOfBirth": "1952-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/6"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/6"
-                    }
-                }
-            },
-            {
-                "id": 7,
-                "firstName": "Mark",
-                "lastName": "Portman",
-                "email": "workingemail-7@gmail.com",
-                "dayOfBirth": "1957-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/7"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/7"
-                    }
-                }
-            },
-            {
-                "id": 8,
-                "firstName": "Mark",
-                "lastName": "Erickson",
-                "email": "workingemail-8@gmail.com",
-                "dayOfBirth": "1948-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/8"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/8"
-                    }
-                }
-            },
-            {
-                "id": 9,
-                "firstName": "Alex",
-                "lastName": "Roach",
-                "email": "workingemail-9@gmail.com",
-                "dayOfBirth": "1933-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/9"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/9"
-                    }
-                }
-            },
-            {
-                "id": 10,
-                "firstName": "Mary",
-                "lastName": "Erickson",
-                "email": "workingemail-10@gmail.com",
-                "dayOfBirth": "1992-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/10"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/10"
-                    }
-                }
-            },
-            {
-                "id": 11,
-                "firstName": "Mark",
-                "lastName": "Smith",
-                "email": "workingemail-11@gmail.com",
-                "dayOfBirth": "1958-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/11"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/11"
-                    }
-                }
-            },
-            {
-                "id": 12,
-                "firstName": "Ani",
-                "lastName": "Erickson",
-                "email": "ani@asdas.ru",
-                "dayOfBirth": "1960-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/12"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/12"
-                    }
-                }
-            },
-            {
-                "id": 13,
-                "firstName": "Nataly",
-                "lastName": "Portman",
-                "email": "workingemail-13@gmail.com",
-                "dayOfBirth": "1963-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/13"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/13"
-                    }
-                }
-            },
-            {
-                "id": 14,
-                "firstName": "Nataly",
-                "lastName": "Doe",
-                "email": "workingemail-14@gmail.com",
-                "dayOfBirth": "1939-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/14"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/14"
-                    }
-                }
-            },
-            {
-                "id": 15,
-                "firstName": "Mary",
-                "lastName": "Li",
-                "email": "workingemail-15@gmail.com",
-                "dayOfBirth": "1942-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/15"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/15"
-                    }
-                }
-            },
-            {
-                "id": 16,
-                "firstName": "John",
-                "lastName": "Portman",
-                "email": "workingemail-16@gmail.com",
-                "dayOfBirth": "1978-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/16"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/16"
-                    }
-                }
-            },
-            {
-                "id": 17,
-                "firstName": "Robert",
-                "lastName": "Portman",
-                "email": "workingemail-17@gmail.com",
-                "dayOfBirth": "1954-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/17"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/17"
-                    }
-                }
-            },
-            {
-                "id": 18,
-                "firstName": "John",
-                "lastName": "Li",
-                "email": "workingemail-18@gmail.com",
-                "dayOfBirth": "1975-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/18"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/18"
-                    }
-                }
-            },
-            {
-                "id": 19,
-                "firstName": "Mark",
-                "lastName": "Erickson",
-                "email": "workingemail-19@gmail.com",
-                "dayOfBirth": "1971-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/19"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/19"
-                    }
-                }
-            },
-            {
-                "id": 20,
-                "firstName": "Nataly",
-                "lastName": "Portman",
-                "email": "workingemail-20@gmail.com",
-                "dayOfBirth": "1955-08-02",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/20"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/20"
-                    }
-                }
-            },
-            {
-                "id": 21,
-                "firstName": "Ibhjllkjhgfdddrt",
-                "lastName": "Ivanov",
-                "email": "alyona@asdas.ru",
-                "dayOfBirth": "2000-01-01",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:65206/api/users/21"
-                    },
-                    "user": {
-                        "href": "http://localhost:65206/api/users/21"
-                    }
-                }
-            }
-        ]
-    },
-    "_links": {
-        "first": {
-            "href": "http://localhost:65206/api/users?page=0&size=20"
-        },
-        "self": {
-            "href": "http://localhost:65206/api/users"
-        },
-        "next": {
-            "href": "http://localhost:65206/api/users?page=1&size=20"
-        },
-        "last": {
-            "href": "http://localhost:65206/api/users?page=1&size=20"
-        },
-        "profile": {
-            "href": "http://localhost:65206/api/profile/users"
-        }
-    },
-    "page": {
-        "size": 20,
-        "totalElements": 23,
-        "totalPages": 2,
-        "number": 0
-    }
-}
-]]></system-out>
-  </testcase>
+  <testcase name="shouldSortByFirstNameForward" classname="com.nordigy.testrestapi.RestApiTests$GetMethodTests" time="0.221"/>
 </testsuite>
