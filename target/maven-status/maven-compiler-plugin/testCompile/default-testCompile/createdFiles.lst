@@ -1,7 +1,2 @@
-com/nordigy/testrestapi/RestApiTests$PutMethodTests.class
-com/nordigy/testrestapi/RestApiTests$GetMethodTests.class
-com/nordigy/testrestapi/RestApiTests$PostMethodTests.class
 com/nordigy/testrestapi/RestApiTests.class
 com/nordigy/testrestapi/model/UserResponseDto.class
-com/nordigy/testrestapi/RestApiTests$DeleteMethodTests.class
-com/nordigy/testrestapi/RestApiTests$PatchMethodTests.class
