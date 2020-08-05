@@ -35,6 +35,6 @@ Git, IDE, Java 11, Maven
 3. Если система не запускается или тесты не проходят - создавайте баг-репорт.
 
 ## Окружение
-OS Version: Mac OS High Sierra
-IDE: IntelliJ IDEA 2019.3.4 (Communiti Edition) 
-Java version: Openjdk version "11.0.6" 2020-01-14
+* OS Version: Mac OS High Sierra
+* IDE: IntelliJ IDEA 2019.3.4 (Communiti Edition) 
+* Java version: Openjdk version "11.0.6" 2020-01-14
