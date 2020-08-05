@@ -1,72 +1,54 @@
 -------------------------------------------------------------------------------
 Test set: com.nordigy.testrestapi.RestApiTests
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 33.294 s <<< FAILURE! - in com.nordigy.testrestapi.RestApiTests
-shouldDoNothingWhenDeleteNotExistingUser  Time elapsed: 0.43 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-JSON path page.totalElements doesn't match.
-Expected: is <20>
-  Actual: 19
-
-	at com.nordigy.testrestapi.RestApiTests$DeleteMethodTests.shouldDoNothingWhenDeleteNotExistingUser(RestApiTests.java:499)
-
-shouldNotCreateNewUserWhenSurname31Symbols  Time elapsed: 0.237 s  <<< FAILURE!
+Tests run: 23, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 27.831 s <<< FAILURE! - in com.nordigy.testrestapi.RestApiTests
+shouldNotCreateNewUserWhenSurname31Symbols  Time elapsed: 0.11 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 JSON path subErrors.get(0).message doesn't match.
 Expected: is "размер должен находиться в диапазоне от 2 до 30"
   Actual: размер должен находиться в диапазоне от 2 до 15
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname31Symbols(RestApiTests.java:270)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname31Symbols(RestApiTests.java:272)
 
-shouldNotCreateNewUserWhenName16Symbols  Time elapsed: 0.096 s  <<< FAILURE!
+shouldCreateNewUserWhenName15SymbolsSurname30Symbols  Time elapsed: 0.053 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldCreateNewUserWhenName15SymbolsSurname30Symbols(RestApiTests.java:193)
+
+shouldNotCreateNewUserWhenName16Symbols  Time elapsed: 0.044 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <201>.
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName16Symbols(RestApiTests.java:233)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName16Symbols(RestApiTests.java:235)
 
-shouldNotCreateNewUserWhenSurname1Symbol  Time elapsed: 0.097 s  <<< FAILURE!
+shouldNotCreateNewUserWhenSurname1Symbol  Time elapsed: 0.084 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 JSON path subErrors.get(0).message doesn't match.
 Expected: is "размер должен находиться в диапазоне от 2 до 30"
   Actual: размер должен находиться в диапазоне от 2 до 15
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname1Symbol(RestApiTests.java:252)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenSurname1Symbol(RestApiTests.java:254)
 
-shouldNotCreateNewUserWhenName1Symbol  Time elapsed: 0.071 s  <<< FAILURE!
+shouldNotCreateNewUserWhenName1Symbol  Time elapsed: 0.097 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 JSON path subErrors.get(0).message doesn't match.
 Expected: is "размер должен находиться в диапазоне от 2 до 15"
   Actual: размер должен находиться в диапазоне от 2 до 30
 
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName1Symbol(RestApiTests.java:216)
+	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldNotCreateNewUserWhenName1Symbol(RestApiTests.java:218)
 
-shouldCreateNewUserWhenName15Symbols  Time elapsed: 0.075 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <201> but was <409>.
-
-	at com.nordigy.testrestapi.RestApiTests$PostMethodTests.shouldCreateNewUserWhenName15Symbols(RestApiTests.java:191)
-
-shouldReturnCorrectNumberOfPages  Time elapsed: 0.216 s  <<< FAILURE!
+shouldReturnCorrectNumberOfPages  Time elapsed: 0.192 s  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 JSON path page.totalPages doesn't match.
 Expected: is <1>
   Actual: 2
 
-	at com.nordigy.testrestapi.RestApiTests$GetMethodTests.shouldReturnCorrectNumberOfPages(RestApiTests.java:64)
-
-shouldReturnCorrectUsersListSize  Time elapsed: 0.243 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-JSON path page.totalElements doesn't match.
-Expected: is <20>
-  Actual: 23
-
-	at com.nordigy.testrestapi.RestApiTests$GetMethodTests.shouldReturnCorrectUsersListSize(RestApiTests.java:46)
+	at com.nordigy.testrestapi.RestApiTests$GetMethodTests.shouldReturnCorrectNumberOfPages(RestApiTests.java:66)
 

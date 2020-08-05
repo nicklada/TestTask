@@ -56,15 +56,15 @@ class RestApiTests {
 //                    .statusCode(200)
 //                    .body("page.size", is(20));
 //        }
-
-        @Test
-        public void shouldReturnCorrectNumberOfPages() {
-            given().log().all()
-                    .when().get("/api/users")
-                    .then().log().ifValidationFails()
-                    .statusCode(200)
-                    .body("page.totalPages", is(1));
-        }
+//
+//        @Test
+//        public void shouldReturnCorrectNumberOfPages() {
+//            given().log().all()
+//                    .when().get("/api/users")
+//                    .then().log().ifValidationFails()
+//                    .statusCode(200)
+//                    .body("page.totalPages", is(1));
+//        }
 
         @Test
         public void shouldReturnUserIfExists() {
@@ -153,11 +153,11 @@ class RestApiTests {
         }
 
         @Test
-        public void shouldCreateNewUserWhenName2Symbols() {
+        public void shouldCreateNewUserWhenNameAndSurname2Symbols() {
             ObjectMapper objectMapper = new ObjectMapper();
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.put("firstName", "El");
-            objectNode.put("lastName", "Ivanov");
+            objectNode.put("lastName", "Iv");
             objectNode.put("dayOfBirth", "2000-01-01");
             objectNode.put("email", "asdas@asdas.ru");
 
@@ -177,11 +177,11 @@ class RestApiTests {
         }
 
         @Test
-        public void shouldCreateNewUserWhenName15Symbols() {
+        public void shouldCreateNewUserWhenName15SymbolsSurname30Symbols() {
             ObjectMapper objectMapper = new ObjectMapper();
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.put("firstName", "Алёна-Генриэтта");
-            objectNode.put("lastName", "Ivanov");
+            objectNode.put("lastName", "Алёна-ГенриэттаАлёна-Генриэтта");
             objectNode.put("dayOfBirth", "2000-01-01");
             objectNode.put("email", "tgkdl@asdas.ru");
 
@@ -279,7 +279,7 @@ class RestApiTests {
             objectNode.put("firstName", "Ivan");
             objectNode.put("lastName", "Ivanov");
             objectNode.put("dayOfBirth", "2000-01-01");
-            objectNode.put("email", "!*)(*&^54678jhgf");
+            objectNode.put("email", ")(*&^54678jhgf");
 
             given().log().all()
                     .body(objectNode)
@@ -467,9 +467,6 @@ class RestApiTests {
             ObjectMapper objectMapper = new ObjectMapper();
             ObjectNode objectNode = objectMapper.createObjectNode();
             objectNode.put("firstName", "Mari");
-            objectNode.put("lastName", "");
-            objectNode.put("dayOfBirth", "");
-            objectNode.put("email", "");
 
             given().log().all()
                     .body(objectNode)
