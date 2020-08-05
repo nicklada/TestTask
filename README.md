@@ -36,5 +36,5 @@ Git, IDE, Java 11, Maven
 
 ## Окружение
 OS Version: Mac OS High Sierra
+IDE: IntelliJ IDEA 2019.3.4 (Communiti Edition) 
 Java version: Openjdk version "11.0.6" 2020-01-14
-Maven version: Apache Maven 3.6.3
