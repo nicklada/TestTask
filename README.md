@@ -9,7 +9,7 @@
 
 2.Инициализируйте git репозиторий командой `git init`
 
-3.Подключите данный репозиторий как удаленный командой `git remote https://github.com/nicklada/TestTask`
+3.Подключите данный репозиторий как удаленный командой `git remote add origin https://github.com/nicklada/TestTask/tree/basic`
 
 4.Получите копию данной ветки репозитория на ваш локальный ПК командой `git pull origin basic`
 
