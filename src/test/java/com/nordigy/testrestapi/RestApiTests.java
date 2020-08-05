@@ -402,30 +402,30 @@ class RestApiTests {
                     .body("subErrors.get(0).message", is("не должно равняться null"));
         }
 
-    @Test
-    public void shouldCreateNewUserWhenPutInfoToNotExistingUser() {
-        ObjectMapper objectMapper = new ObjectMapper();
-        ObjectNode objectNode = objectMapper.createObjectNode();
-        objectNode.put("firstName", "Mari");
-        objectNode.put("lastName", "Brown");
-        objectNode.put("dayOfBirth", "1989-03-02");
-        objectNode.put("email", "mari@gjgj.com");
+        @Test
+        public void shouldCreateNewUserWhenPutInfoToNotExistingUser() {
+            ObjectMapper objectMapper = new ObjectMapper();
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("firstName", "Mari");
+            objectNode.put("lastName", "Brown");
+            objectNode.put("dayOfBirth", "1989-03-02");
+            objectNode.put("email", "mari@gjgj.com");
 
-        ObjectNode user = given().log().all()
-                .body(objectNode)
-                .contentType(ContentType.JSON)
-                .when().put("/api/users/51")
-                .then().log().ifValidationFails()
-                .statusCode(201)
-                .extract().body().as(ObjectNode.class);
+            ObjectNode user = given().log().all()
+                    .body(objectNode)
+                    .contentType(ContentType.JSON)
+                    .when().put("/api/users/51")
+                    .then().log().ifValidationFails()
+                    .statusCode(201)
+                    .extract().body().as(ObjectNode.class);
 
-        assertThat(user.get("firstName")).isEqualTo(objectNode.get("firstName"));
-        assertThat(user.get("lastName")).isEqualTo(objectNode.get("lastName"));
-        assertThat(user.get("dayOfBirth")).isEqualTo(objectNode.get("dayOfBirth"));
-        assertThat(user.get("email")).isEqualTo(objectNode.get("email"));
+            assertThat(user.get("firstName")).isEqualTo(objectNode.get("firstName"));
+            assertThat(user.get("lastName")).isEqualTo(objectNode.get("lastName"));
+            assertThat(user.get("dayOfBirth")).isEqualTo(objectNode.get("dayOfBirth"));
+            assertThat(user.get("email")).isEqualTo(objectNode.get("email"));
 
 
-    }
+        }
     }
 
     @Nested
